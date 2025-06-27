@@ -1,44 +1,57 @@
-# 🧠 AskBI – Text-to-SQL Analytics Assistant
+# 🧠 AskBI – Natural Language to SQL Assistant
 
-Ask natural questions. Get SQL. Visualize results.  
-Built for teams who need instant insights from their data.
+Ask questions. Get SQL. Run queries. Visualize results.  
+**AskBI** is an open-source, lightweight analytics assistant that turns plain English into powerful insights.
 
-![AskBI Demo](./demo/screenshot.png)
+<p align="center">
+  <video src="./demo/demo.mp4" width="700" controls autoplay loop muted></video>
+</p>
 
-## 🎥 Demo Video
-▶️ [Watch Full Demo](./demo/demo.mp4)
+---
 
 ## 🚀 Features
-- 💬 Ask natural questions like _"What were last month’s top products?"_
-- 🧠 LLM-powered SQL generation (OpenAI, local LLM optional)
-- 🧾 Query execution engine (SQLite, PostgreSQL, etc.)
-- 📊 Parquet result previews + Recharts visualizations
-- 🧪 Query log, execution stats, result summaries
-- 🧱 Built with modular backend (FastAPI or Go) + React UI
 
-## 🧠 Ideal For
-- Solo devs exploring LLM + BI tooling
-- Internal dashboards for support/ops/PM teams
-- Lightweight alternative to Hex, Superset, or dbt Cloud
+- 💬 Ask natural language questions like:
+  > "What were last month's top-selling products?"
+- 🧠 LLM-generated SQL (OpenAI)
+- 🔍 Smart table and column detection from metadata
+- 🧾 SQL editor with execution + result preview
+- 📊 Automated visualizations using Microsoft Lida and Vega
+- 🪵 Query logs with execution time + result summary
+- 📁 Temporary Parquet file output (`/tmp`)
 
-## 🛠 Stack
-- **Frontend**: React + Tailwind
-- **Backend**: FastAPI 
-- **Storage**: Parquet files
-- **AI**: OpenAI API (plug in your key) / Local model via config
+---
 
-## 🧪 Running Locally
+## ⚙️ Stack
+
+| Layer     | Tech                              |
+| --------- | --------------------------------- |
+| Frontend  | React, Tailwind CSS, ShadCN, LIDA |
+| Backend   | FastAPI                           |
+| Storage   | Parquet                           |
+| AI Engine | OpenAI GPT-4                      |
+| Auth      | Coming soon                       |
+
+---
+
+## 🧪 Run Locally
+
+Clone and run the project locally with:
 
 ```bash
-git clone https://github.com/aathif394/AskBI.git
+git clone https://github.com/<your-username>/AskBI.git
 cd AskBI
 
 # Backend
-cd api
+cd backend
 cp .env.example .env
-uvicorn main:app --reload
 
-# Frontend
+# Main dir
+cd ..
+docker compose up --build
+
+# Frontend (in new terminal)
 cd ../ui
 npm install
 npm run dev
+```
