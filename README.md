@@ -3,7 +3,7 @@
 Ask questions. Get SQL. Run queries. Visualize results.  
 **AskBI** is an open-source, lightweight analytics assistant that turns plain English into powerful insights.
 
-![Demo](./demo/demo.gif)
+![Demo]([./demo/demo.gif](https://github.com/user-attachments/assets/a45dbb14-0115-4a7c-964e-ac545e308cae))
 
 ---
 
