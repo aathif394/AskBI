@@ -1,0 +1,42 @@
+# Node.js (frontend)
+node_modules/
+build/
+dist/
+.env
+.env.*.local
+
+# Python (backend)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.log
+venv/
+.env
+.env.*.local
+
+# macOS
+.DS_Store
+
+# VSCode settings (optional)
+.vscode/
+
+# Parquet & query output files
+*.parquet
+/tmp/
+
+# Demo media
+demo/*.mp4
+demo/*.mov
+demo/*.avi
+
+# OS/IDE files
+*.swp
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Git
+.git/

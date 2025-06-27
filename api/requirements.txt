@@ -1,0 +1,19 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+psycopg2-binary
+pymysql
+python-dotenv
+openai
+altair
+altair_saver
+vega-datasets
+lida  # if you're using it
+pandas
+polars
+tabulate
+sqlalchemy
+pydantic
+pyarrow
+snowflake-sqlalchemy
+snowflake-connector-python
