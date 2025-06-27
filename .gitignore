@@ -27,10 +27,6 @@ venv/
 *.parquet
 /tmp/
 
-# Demo media
-demo/*.mp4
-demo/*.mov
-demo/*.avi
 
 # OS/IDE files
 *.swp
